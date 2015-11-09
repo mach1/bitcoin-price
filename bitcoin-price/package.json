@@ -11,5 +11,9 @@
   ],
   "bin": "bin/index.js",
   "author": "Jaan Lambert",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mach1/bitcoin-price.git"
+  }, 
   "license": "MIT"
 }
