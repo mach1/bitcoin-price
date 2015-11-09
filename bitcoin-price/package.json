@@ -1,0 +1,15 @@
+{
+  "name": "bitcoin-price",
+  "version": "0.0.1",
+  "description": "Simple module to query current Bitcoin price.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "bin": "bin/index.js",
+  "author": "Jaan Lambert",
+  "license": "MIT"
+}
