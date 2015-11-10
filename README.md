@@ -14,3 +14,6 @@ set -g status-right-length 60
 set -g status-right "#(bitcoin-price) :: #(battery -t) #[fg=blue]:: %d %b %Y #[fg=cyan]::%l:%M %p "
 set -g status-interval 30
 ```
+
+![Image of tmux statusbar]
+(https://github.com/mach1/bitcoin-price/blob/master/bitcoin-price/sample.png?raw=true)
