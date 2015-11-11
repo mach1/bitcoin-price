@@ -1,25 +1,7 @@
 #!/usr/bin/env node
 'use strict'
+var currentPrice = require('./current-price.js');
 
-var https = require('https');
-
-var options = {
-  host: 'api.coindesk.com',
-  path: '/v1/bpi/currentprice.json',
-  method: 'GET'
-};
-
-var req = https.request(options, function(res) {
-  var data = '';
-  res.on('data', function(chunk) {
-    data += chunk;
-  });
-
-  res.on('end', function() {
-    var json = JSON.parse(data);
-    console.log(parseFloat(json.bpi.USD.rate).toFixed(2) + '$');
-  });
+currentPrice(function(price) {
+  console.log(price);
 });
-
-req.end();
-
