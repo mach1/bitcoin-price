@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 var currentPrice = require('./current-price.js');
-var dayHistory = require('./week-history.js');
+var dayHistory = require('./day-history.js');
 
 if (process.argv.indexOf('-g') !== -1) {
   dayHistory(function(history) {

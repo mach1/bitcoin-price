@@ -17,6 +17,10 @@ function getCurrentPrice(callback) {
       var json = JSON.parse(data);
       callback(parseFloat(json.bpi.USD.rate).toFixed(2) + '$');
     });
+
+    res.on('error', function() {
+      callback('Coindesk not available');
+    });
   });
 
   req.end();
