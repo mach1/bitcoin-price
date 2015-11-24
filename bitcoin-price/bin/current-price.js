@@ -6,7 +6,7 @@ var options = {
   method: 'GET'
 };
 
-function getCurrentPrice(callback) {
+function getCurrentPrice(currency, callback) {
   var req = https.request(options, function(res) {
     var data = '';
     res.on('data', function(chunk) {
@@ -15,7 +15,7 @@ function getCurrentPrice(callback) {
 
     res.on('end', function() {
       var json = JSON.parse(data);
-      callback(parseFloat(json.bpi.USD.rate).toFixed(2) + '$');
+      callback(parseFloat(json.bpi[currency].rate).toFixed(2) + ' ' + currency);
     });
 
     res.on('error', function() {
