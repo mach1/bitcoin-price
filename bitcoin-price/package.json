@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-price",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple module to query current Bitcoin price.",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mach1/bitcoin-price.git"
-  }, 
+  },
   "license": "MIT"
 }
