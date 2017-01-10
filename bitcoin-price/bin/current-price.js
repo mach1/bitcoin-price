@@ -1,13 +1,12 @@
-var https = require('https');
+var http = require('http');
 
 var options = {
   host: 'api.coindesk.com',
-  path: '/v1/bpi/currentprice.json',
-  method: 'GET'
+  path: '/v1/bpi/currentprice.json'
 };
 
 function getCurrentPrice(currency, callback) {
-  var req = https.request(options, function(res) {
+  var req = http.request(options, function(res) {
     var data = '';
     res.on('data', function(chunk) {
       data += chunk;
