@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-price",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple module to query current Bitcoin price.",
   "main": "index.js",
   "scripts": {
