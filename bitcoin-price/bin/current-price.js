@@ -14,7 +14,7 @@ function getCurrentPrice(currency, callback) {
 
     res.on('end', function() {
       var json = JSON.parse(data);
-      callback(parseFloat(json.bpi[currency].rate).toFixed(2) + ' ' + currency);
+      callback(parseFloat(json.bpi[currency].rate_float).toFixed(2) + ' ' + currency);
     });
 
     res.on('error', function() {
